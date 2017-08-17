@@ -1,0 +1,52 @@
+State,Division,Region,GoodBBQ,Population
+Alabama,East South Central,South,yes,4779736
+Alaska,Pacific,West,no,710231
+Arizona,Mountain,West,yes,6392017
+Arkansas,West South Central,South,no,2915918
+California,Pacific,West,yes,37253956
+Colorado,Mountain,West,yes,5029196
+Connecticut,New England,Northeast,no,3574097
+Delaware,South Atlantic,South,no,897934
+District of Columbia,South Atlantic,South,yes,601723
+Florida,South Atlantic,South,no,18801310
+Georgia,South Atlantic,South,yes,9687653
+Hawaii,Pacific,West,no,1360301
+Idaho,Mountain,West,no,1567582
+Illinois,East North Central,Midwest,yes,12830632
+Indiana,East North Central,Midwest,no,6483802
+Iowa,West North Central,Midwest,no,3046355
+Kansas,West North Central,Midwest,no,2853118
+Kentucky,East South Central,South,no,4339367
+Louisiana,West South Central,South,yes,4533372
+Maine,New England,Northeast,no,1328361
+Maryland,South Atlantic,South,yes,5773552
+Massachusetts,New England,Northeast,no,6547629
+Michigan,East North Central,Midwest,no,9883640
+Minnesota,West North Central,Midwest,no,5303925
+Mississippi,East South Central,South,no,2967297
+Missouri,West North Central,Midwest,yes,5988927
+Montana,Mountain,West,no,989415
+Nebraska,West North Central,Midwest,no,1826341
+Nevada,Mountain,West,no,2700551
+New Hampshire,New England,Northeast,no,1316470
+New Jersey,Middle Atlantic,Northeast,no,8791894
+New Mexico,Mountain,West,no,2059179
+New York,Middle Atlantic,Northeast,yes,19378102
+North Carolina,South Atlantic,South,yes,9535483
+North Dakota,West North Central,Midwest,no,672591
+Ohio,East North Central,Midwest,yes,11536504
+Oklahoma,West South Central,South,yes,3751351
+Oregon,Pacific,West,yes,3831074
+Pennsylvania,Middle Atlantic,Northeast,yes,12702379
+Rhode Island,New England,Northeast,no,1052567
+South Carolina,South Atlantic,South,yes,4625364
+South Dakota,West North Central,Midwest,no,814180
+Tennessee,East South Central,South,yes,6346105
+Texas,West South Central,South,yes,25145561
+Utah,Mountain,West,no,2763885
+Vermont,New England,Northeast,yes,625741
+Virginia,South Atlantic,South,no,8001024
+Washington,Pacific,West,no,6724540
+West Virginia,South Atlantic,South,no,1852994
+Wisconsin,East North Central,Midwest,yes,5686986
+Wyoming,Mountain,West,no,563626
