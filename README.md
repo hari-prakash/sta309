@@ -10,4 +10,4 @@
 * [Chapter 10: Tests for proportions](r-help/10-tests-for-proportions)
 * [Chapter 11: Inference for means](r-help/11-inference-for-means)
 * [Chapter 12: Comparing two means](r-help/12-comparing-two-means)
-* [Chapter 14: Inference for regression](r-help/14-inference-for-regression)
+* [Chapters 14 and 15: Inference for regression](r-help/14-inference-for-regression)
