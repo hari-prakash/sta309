@@ -21,7 +21,7 @@ Now, we can construct a 95% confidence interval for the average number of hours 
 
 	> ci <- sample.mean + critical.value * c(-standard.error, standard.error)
 
-Now let's test the hypothesis that average student gets 8 hours of sleep.  So the null hypothesis is ![formula](http://chart.apis.google.com/chart?cht=tx&chl=\\mu=8)  and the test statistic is:
+Now let's test the hypothesis that average student gets 8 hours of sleep.  So the null hypothesis is ![formula](http://chart.apis.google.com/chart?cht=tx&chl=\mu=8)  and the test statistic is:
 
 	> mu0 <- 8  
 	> ts.t <- (sample.mean - mu0) / standard.error
@@ -40,6 +40,6 @@ For one sided tests, use `alternative="less"` or `alternative="greater"`.  In t
 
 To find the required sample size for a confidence interval with a particular margin of error, we use the formula:
 
-![formula](http://chart.apis.google.com/chart?cht=tx&chl=n=\\left(\\frac{z*\\sigma}{\\text{ME}} \\right)^2)
+![formula](http://chart.apis.google.com/chart?cht=tx&chl=n=\left(\frac{z*\sigma}{\text{ME}} \right)^2)
 
-Typically, ![formula](http://chart.apis.google.com/chart?cht=tx&chl=\\sigma) is unknown so we use an estimate obtained from a sample.  z* is equal to `qnorm(1 - (1 - conf.level) / 2)` The result must always be **rounded up** to make sure that the sample size is adequate.
+Typically, ![formula](http://chart.apis.google.com/chart?cht=tx&chl=\sigma) is unknown so we use an estimate obtained from a sample.  z* is equal to `qnorm(1 - (1 - conf.level) / 2)` The result must always be **rounded up** to make sure that the sample size is adequate.

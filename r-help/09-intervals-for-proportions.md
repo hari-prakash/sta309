@@ -41,6 +41,6 @@ Or to calculate a 95% CI, we can omit the last parameter because it is 95% by de
 
 To find the required sample size for a confidence interval with a particular margin of error, we use the formula:
 
-![formula](http://chart.apis.google.com/chart?cht=tx&chl=n=p(1-p)\\left(\\frac{z_*}{\\text{ME}}\\right)^2)
+![formula](http://chart.apis.google.com/chart?cht=tx&chl=n=p(1-p)\left(\frac{z_*}{\text{ME}}\right)^2)
 
 Typically, p is unknown so we use 0.5.  As above, z* is `qnorm(1 - (1 - conf.level) / 2)`. The result must always be rounded up to make sure that the sample size is adequate.
