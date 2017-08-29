@@ -9,6 +9,57 @@
 
 You may get categorical data in two forms: raw data, where each row corresponds to a separate case; or a frequency (contingency) table where counts have already been tabulated.
 
+## When you have raw data
+
+In this section we’ll use the file [bbq.csv](https://raw.githubusercontent.com/brianlukoff/sta309/master/example-data/bbq.csv).  First, load the file (replace the part in quotes with the path to the file on your computer):
+
+	> bbq <- read.csv("~/Desktop/bbq.csv")
+
+You can also use RStudio to create this command for you by selecting “Import Dataset” in the upper-right panel.
+
+Make a one-way table by region:
+
+	> table(bbq$Region)
+	Midwest Northeast     South      West
+	     12         9        17        13
+
+Make a two-way contingency table by region and BBQ status:
+
+	> table(bbq$Region, bbq$GoodBBQ)
+	                   no   yes
+	      Midwest       8     4
+	      Northeast     6     3
+	      South         7    10
+	      West          9     4
+
+(Note: If you have more than two categorical variables, you can also add a third parameter to the table function to make a three-way table.)
+
+You can flip what’s on the rows and columns by reversing the order of the variables:
+
+	> table(bbq$GoodBBQ, bbq$Region)
+	
+	     Midwest Northeast South West
+	  no        8        6     7    9
+	 yes        4        3    10    4
+
+Create a bar graph:
+
+	> plot(bbq$GoodBBQ)
+
+Or create a segmented bar graph:
+
+	> plot(bbq$Region, bbq$GoodBBQ)
+
+Note that in this latter graph, both the widths and the heights of the bars are proportional to the number of states in each category!
+
+You can also produce traditional segmented/stacked bar graphs:
+
+	> barplot(table(bbq$Region, bbq$GoodBBQ), legend=T)
+
+And you can just as easily create mosaic plots:
+
+	> mosaicplot(table(bbq$Region, bbq$GoodBBQ))
+	
 ## When you have a frequency table to import
 
 In this section, we'll use the file [example.csv](https://raw.githubusercontent.com/brianlukoff/sta309/master/example-data/example.csv).  If you are downloading the data from MyStatLab, you can download the Excel file and then save in CSV format and then define the matrix. 
@@ -85,54 +136,3 @@ If you want the marginal distribution as proportions instead of counts, use the 
 	> margin.table(prop.table(example),2)
 	      None         AA         BA        MA         PhD 
 	0.30308880 0.09073359 0.45559846 0.09459459 0.05598456
-
-## When you have raw data
-
-In this section we’ll use the file [bbq.csv](https://raw.githubusercontent.com/brianlukoff/sta309/master/example-data/bbq.csv).  First, load the file (replace the part in quotes with the path to the file on your computer):
-
-	> bbq <- read.csv("~/Desktop/bbq.csv")
-
-You can also use RStudio to create this command for you by selecting “Import Dataset” in the upper-right panel.
-
-Make a one-way table by region:
-
-	> table(bbq$Region)
-	Midwest Northeast     South      West
-	     12         9        17        13
-
-Make a two-way contingency table by region and BBQ status:
-
-	> table(bbq$Region, bbq$GoodBBQ)
-	                   no   yes
-	      Midwest       8     4
-	      Northeast     6     3
-	      South         7    10
-	      West          9     4
-
-(Note: If you have more than two categorical variables, you can also add a third parameter to the table function to make a three-way table.)
-
-You can flip what’s on the rows and columns by reversing the order of the variables:
-
-	> table(bbq$GoodBBQ, bbq$Region)
-	
-	     Midwest Northeast South West
-	  no        8        6     7    9
-	 yes        4        3    10    4
-
-Create a bar graph:
-
-	> plot(bbq$GoodBBQ)
-
-Or create a segmented bar graph:
-
-	> plot(bbq$Region, bbq$GoodBBQ)
-
-Note that in this latter graph, both the widths and the heights of the bars are proportional to the number of states in each category!
-
-You can also produce traditional segmented/stacked bar graphs:
-
-	> barplot(table(bbq$Region, bbq$GoodBBQ), legend=T)
-
-And you can just as easily create mosaic plots:
-
-	> mosaicplot(table(bbq$Region, bbq$GoodBBQ))
