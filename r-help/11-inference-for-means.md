@@ -2,8 +2,8 @@
 
 ## Videos
 
-*   [<span><span>Sampling distributions<span class="screenreader-only">](https://www.youtube.com/embed/K-y77viwmkA)
-*   [](https://www.youtube.com/embed/K-y77viwmkA)[<span><span>One-sample t-test<span class="screenreader-only"> ](https://www.youtube.com/embed/GyFGfdG4aO4)
+*   [Sampling distributions](https://www.youtube.com/embed/K-y77viwmkA)
+*   [One-sample t-test](https://www.youtube.com/embed/GyFGfdG4aO4)
 
 ## Useful commands
 
