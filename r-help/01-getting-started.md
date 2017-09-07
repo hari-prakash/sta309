@@ -35,3 +35,6 @@ You can use R to do calculations with this data such as sum the values.
 Use * for multiply.  
 Use ^ for raised to the power of.  
 Use parentheses to ensure that it understands what you are trying to compute.
+
+link to R help session for HW1 - 09/07/2017
+https://youtu.be/UGEgyL11RL4
