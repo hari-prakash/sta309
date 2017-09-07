@@ -36,5 +36,6 @@ Use * for multiply.
 Use ^ for raised to the power of.  
 Use parentheses to ensure that it understands what you are trying to compute.
 
-link to R help session for HW1 - 09/07/2017
+## link to R help session for HW1 - 09/07/2017
+
 https://youtu.be/UGEgyL11RL4
