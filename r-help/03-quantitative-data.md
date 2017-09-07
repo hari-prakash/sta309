@@ -35,7 +35,7 @@ We can also get descriptive statistics:
 	> fivenum(data$X0)
 	> summary(data$X0)
 
-Note that different software uses different algorithms to compute quartiles.  Even the quartiles computed by the fivenum and summary functions in R are not the same. Use fivenum for the homework.
+Note that different software uses different algorithms to compute quartiles.  Even the quartiles computed by the `fivenum` and `summary` functions in R are not the same. Use `fivenum` for the homework.
 
 When computing z-scores, note that if you apply a numeric operation to a vector, the operation will be applied to every element of that vector. For example:
 
