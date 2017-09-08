@@ -11,3 +11,7 @@
 * [Chapter 11: Inference for means](r-help/11-inference-for-means)
 * [Chapter 12: Comparing two means](r-help/12-comparing-two-means)
 * [Chapters 14 and 15: Inference for regression](r-help/14-inference-for-regression)
+
+# Videos of R help sessions
+
+* [Week 1](https://youtu.be/UGEgyL11RL4) (9/7)
