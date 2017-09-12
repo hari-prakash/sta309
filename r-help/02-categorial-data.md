@@ -15,8 +15,6 @@ In this section we'll use the file [bbq.csv](https://raw.githubusercontent.com/b
 
 	> bbq <- read.csv("https://raw.githubusercontent.com/brianlukoff/sta309/master/example-data/bbq.csv")
 
-You can also use RStudio to create this command for you by selecting “Import Dataset” in the upper-right panel.
-
 Make a one-way table by region:
 
 	> table(bbq$Region)
