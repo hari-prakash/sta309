@@ -11,9 +11,9 @@ You may get categorical data in two forms: raw data, where each row corresponds 
 
 ## When you have raw data
 
-In this section we’ll use the file [bbq.csv](https://raw.githubusercontent.com/brianlukoff/sta309/master/example-data/bbq.csv).  First, load the file (replace the part in quotes with the path to the file on your computer):
+In this section we'll use the file [bbq.csv](https://raw.githubusercontent.com/brianlukoff/sta309/master/example-data/bbq.csv).  First, load the file:
 
-	> bbq <- read.csv("~/Desktop/bbq.csv")
+	> bbq <- read.csv("https://raw.githubusercontent.com/brianlukoff/sta309/master/example-data/bbq.csv")
 
 You can also use RStudio to create this command for you by selecting “Import Dataset” in the upper-right panel.
 
