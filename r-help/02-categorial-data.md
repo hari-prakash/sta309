@@ -71,7 +71,9 @@ If you instead want only the row totals or only the column totals:
 	 no yes 
 	 30  21 
 	  
-The prop.table function takes the frequencies in a table and converts them to percentages.  The function can be used to obtain the percentages for each cell, row percentages, or column percentages as shown below.
+(The part of the commands above after the `#` sign are comments and won't be interpreted by R; you don't have to enter the comments into R. They are there for your preference.)
+
+The `prop.table` function takes the frequencies in a table and converts them to percentages.  The function can be used to obtain the percentages for each cell, row percentages, or column percentages as shown below.
 
 	> prop.table(bbqtable) # gives the cell percentages
 
@@ -97,7 +99,7 @@ The prop.table function takes the frequencies in a table and converts them to pe
 	  South     0.2333333 0.4761905
 	  West      0.3000000 0.1904762
 	  
-You can combine the prop.table and margin.table to get the row and column percentages:
+You can combine the `prop.table` and `margin.table` to get the row and column percentages:
 
 	> margin.table(prop.table(bbqtable),1) # gives the row percentages
 
@@ -109,7 +111,7 @@ You can combine the prop.table and margin.table to get the row and column percen
 	       no       yes 
 	0.5882353 0.4117647 
 	  
-## Making charts:
+## Making charts
 
 To make a bar chart of one variable
 
@@ -143,5 +145,5 @@ This reads in the `example.csv` file as a matrix (table) instead of as a data fr
 	1-5 years   43  9 122 28  17
 	> 5 years  103 34  61  3   1
 
-Functions described above that work on tables incuding barplot, addmargins, margin.table, and prop.table can all be used now.
+Functions described above that work on tables incuding `barplot`, `addmargins`, `margin.table`, and `prop.table` can all be used now.
 
