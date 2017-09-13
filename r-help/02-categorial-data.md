@@ -115,12 +115,6 @@ To make a bar chart of one variable
 
 	> plot(bbq$GoodBBQ)
 
-To create a mosaic plot:
-
-	> plot(bbqtable)
-
-Note that in this latter graph, both the widths and the heights of the bars are proportional to the number of states in each category!
-
 To create a segmented/stacked bar graphs:
 
 	> barplot(bbqtable, legend=T)
