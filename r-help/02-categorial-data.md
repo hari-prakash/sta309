@@ -71,7 +71,7 @@ If you instead want only the row totals or only the column totals:
 	 no yes 
 	 30  21 
 	  
-(The part of the commands above after the `#` sign are comments and won't be interpreted by R; you don't have to enter the comments into R. They are there for your preference.)
+(The part of the commands above after the `#` sign are comments and won't be interpreted by R; you don't have to enter the comments into R. They are there for your reference.)
 
 The `prop.table` function takes the frequencies in a table and converts them to percentages.  The function can be used to obtain the percentages for each cell, row percentages, or column percentages as shown below.
 
@@ -113,13 +113,15 @@ You can combine the `prop.table` and `margin.table` to get the row and column pe
 	  
 ## Making charts
 
-To make a bar chart of one variable
+To make a chart of one variable it is easy if you name your one way table and then make a bar chart or pie chart:
 
-	> plot(bbq$GoodBBQ)
+	region <- table(bbq$Region)
+	barplot(region)
+	pie(region)
 
 To create a segmented/stacked bar graphs:
 
-	> barplot(bbqtable, legend=T)
+	> barplot(bbqtable, legend=T)  # legend=T tells R to provide a legend
 
 Notice that this graph shows the counts.  You can instead compare proportions in categories:
 
@@ -127,7 +129,11 @@ Notice that this graph shows the counts.  You can instead compare proportions in
 	
 To create a mosaic plot where both the width and heights of the bars are proportional to the counts in each category: 
 
-	> plot(bbq$GoodBBQ, bbq$Region)	
+	> mosaicplot(bbqtable)
+	
+You can also traspose the table to switch the rows and columns and add color:
+	
+	> mosaicplot(t(bbqtable),col=rainbow(4))  
 	
 ## When you have a frequency table to import
 
