@@ -19,6 +19,10 @@ Create a histogram:
 
 	> hist(data$X0)
 
+By default, a histogram will show counts.  The option `freq=F` can be added to obtain relative frequencies instead.  In this case you would also want to specify the y axis title:
+
+	> hist(data$X0, freq=F, ylab = "Relative Frequency")
+
 This histogram may not match up exactly with the histograms in MyStatLab, because (1) R may select different bin sizes and (2) R by default may use a different rule than MyStatLab about what to do with values on the boundary between two bins. To make R's boundary rules match MyStatLab's, add `include.lowest=F` and `right=F` as parameters to the hist function. To make the bins match MyStatLab's, you can pass a sequence of bin boundary points to R:
 
 	> hist(data$X0, breaks=c(0,10,20,30,40,50), include.lowest=F, right=F)
