@@ -15,3 +15,4 @@
 # Videos of R help sessions
 
 * [Week 1](https://youtu.be/UGEgyL11RL4) (9/7)
+* [Week 2](https://youtu.be/3KZjbmONnak) (9/13)
