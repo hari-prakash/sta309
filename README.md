@@ -16,3 +16,4 @@
 
 * [Week 1](https://youtu.be/UGEgyL11RL4) (9/7)
 * [Week 2](https://youtu.be/3KZjbmONnak) (9/13)
+* [Week 3](https://youtu.be/wZbYkxW7SRo) (9/20)
